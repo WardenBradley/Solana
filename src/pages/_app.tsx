@@ -3,7 +3,8 @@ import Head from "next/head";
 import { FC } from "react";
 // @ts-ignore
 import { ContextProvider } from "../contexts/ContextProvider";
-import AppBar from "components/AppBar";
+
+import { AppBar } from "components/AppBar";
 // @ts-ignore
 import { Footer } from "../components/Footer";
 import Notifications from "../components/Notification";
@@ -21,9 +22,9 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
         <Notifications />
         <AppBar />
         <Component {...pageProps} />
-        <Footer />
+        {/*<Footer />*/}
       </ContextProvider>
-      // SCRIPTS
+      {/* SCRIPTS */}
       <script src="assets/libs/preline/preline.js"></script>
       <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
       <script src="assets/libs/gumshoejs/gumshoe.polyfills.min.js"></script>
