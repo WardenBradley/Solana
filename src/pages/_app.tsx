@@ -22,7 +22,7 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
         <Notifications />
         <AppBar />
         <Component {...pageProps} />
-        {/*<Footer />*/}
+        <Footer />
       </ContextProvider>
       {/* SCRIPTS */}
       <script src="assets/libs/preline/preline.js"></script>
