@@ -1,7 +1,5 @@
 export { HomeView } from "./home";
-//@ts-ignore
 export { ToolView } from "./tools";
-//@ts-ignore
 export { FeatureView } from "./feature";
 //@ts-ignore
 export { OfferView } from "./offer";

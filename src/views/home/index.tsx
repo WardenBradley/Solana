@@ -118,7 +118,7 @@ export const HomeView: FC = ({ setOpenCreateModal }) => {
                         flex-shrink-0 flex-col items-center 
                         justify-around gap-6"
                       >
-                        {["img-7", "img-13", "img-9", "img-10", "img-25"].map(
+                        {["img-6", "img-10", "img-11", "img-12", "img-13"].map(
                           (image, index) => (
                             <img
                               key={index}
@@ -139,7 +139,7 @@ export const HomeView: FC = ({ setOpenCreateModal }) => {
                       className="marquee-hero flex min-h-full flex-shrink-0 flex-col
                           items-center justify-around gap-6"
                     >
-                      {["img-7", "img-13", "img-9", "img-10", "img-25"].map(
+                      {["img-6", "img-10", "img-11", "img-12", "img-13"].map(
                         (image, index) => (
                           <img
                             key={index}
