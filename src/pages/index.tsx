@@ -53,8 +53,8 @@ const Home: NextPage = (props) => {
       />
 
       <OfferView />
-      {/*
       <FaqView />
+      {/*
       //DYNAMIC COMPONENTS
       {openCreateModal && (
         <div className="new_loader relative h-full bg-slate-900">

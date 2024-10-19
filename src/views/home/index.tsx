@@ -15,7 +15,7 @@ export const HomeView: FC = ({ setOpenCreateModal }) => {
             <div className="p-6">
               <div
                 className="relative grid grid-cols-1 items-center
-                  gap-12 lg:grids-cols-2"
+                  gap-12 lg:grid-cols-2"
               >
                 <div
                   className="bg-primary/10 -z-1 start-0 absolute
@@ -44,13 +44,13 @@ export const HomeView: FC = ({ setOpenCreateModal }) => {
 
                   <p className="text-default-300 md:text-lg">
                     Launch your Solana Token, All in One Solana Token
-                    Devolopment and Deployment
+                    Development and Deployment
                   </p>
 
                   <div className="new_add_css">
                     <a
                       onClick={() => setOpenCreateModal(true)}
-                      className="hover:bg-primary-hover pe-4
+                      className="hover:bg-primary-hover pr-4
                       group mt-10 inline-flex items-center 
                       justify-center gap-2 rounded-full border
                       border-white/10 px-1 py-1 text-white transition-all
@@ -98,9 +98,29 @@ export const HomeView: FC = ({ setOpenCreateModal }) => {
                       <div
                         aria-hidden="true"
                         className="marquee-hero flex min-h-full flex-shrink-0 flex-col
-                      items-center justify-arounfd gap-6"
+                      items-center justify-around gap-6"
                       >
                         {["img-9", "img-14", "img-21", "img-22", "img-11"].map(
+                          (image, index) => (
+                            <img
+                              key={index}
+                              src={`assets/images/ai/${image}.jpg`}
+                              alt=""
+                              className="aspect-1 h-full w-60 rounded-xl object-cover"
+                            />
+                          )
+                        )}
+                      </div>
+                    </div>
+                    <div
+                      className="marquee-reverse m-auto flex flex-col gap-6 
+                          overflow-hidden"
+                    >
+                      <div
+                        className="marquee-hero flex min-h-full flex-shrink-0 flex-col
+                            items-center justify-around gap-6"
+                      >
+                        {["img-6", "img-10", "img-11", "img-12", "img-13"].map(
                           (image, index) => (
                             <img
                               key={index}
@@ -114,7 +134,7 @@ export const HomeView: FC = ({ setOpenCreateModal }) => {
 
                       <div
                         aria-hidden="true"
-                        className="marqueen-hero flex min-h-full
+                        className="marquee-hero flex min-h-full
                         flex-shrink-0 flex-col items-center 
                         justify-around gap-6"
                       >
@@ -129,26 +149,6 @@ export const HomeView: FC = ({ setOpenCreateModal }) => {
                           )
                         )}
                       </div>
-                    </div>
-                  </div>
-                  <div
-                    className="marquee-reverse m-auto flex flex-col gap-6 
-                      overflow hidden"
-                  >
-                    <div
-                      className="marquee-hero flex min-h-full flex-shrink-0 flex-col
-                          items-center justify-around gap-6"
-                    >
-                      {["img-6", "img-10", "img-11", "img-12", "img-13"].map(
-                        (image, index) => (
-                          <img
-                            key={index}
-                            src={`assets/images/ai/${image}.jpg`}
-                            alt=""
-                            className="aspect-1 h-full w-60 rounded-xl object-cover"
-                          />
-                        )
-                      )}
                     </div>
                   </div>
                 </div>
