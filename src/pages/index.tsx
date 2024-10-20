@@ -33,9 +33,7 @@ const Home: NextPage = (props) => {
           content="Build & Create solana token"
         />
       </Head>
-
       <HomeView setOpenCreateModal={setOpenCreateModal} />
-
       <ToolView
         setopenAirdrop={setopenAirdrop}
         setOpenContact={setOpenContact}
@@ -43,7 +41,6 @@ const Home: NextPage = (props) => {
         setOpenSendTransaction={setOpenSendTransaction}
         setOpenTokenMetaData={setOpenTokenMetaData}
       />
-
       <FeatureView
         setopenAirdrop={setopenAirdrop}
         setOpenContact={setOpenContact}
@@ -51,17 +48,15 @@ const Home: NextPage = (props) => {
         setOpenSendTransaction={setOpenSendTransaction}
         setOpenTokenMetaData={setOpenTokenMetaData}
       />
-
       <OfferView />
       <FaqView />
-      {/*
       //DYNAMIC COMPONENTS
       {openCreateModal && (
         <div className="new_loader relative h-full bg-slate-900">
           <CreateView setOpenCreateModal={setOpenCreateModal} />
         </div>
       )}
-
+      {/*
       {openTokenMetaData && (
         <div className="new_loader relative h-full bg-slate-900">
           <TokenMetadata setOpenTokenMetaData={setOpenTokenMetaData} />
