@@ -327,24 +327,26 @@ export const CreateView: FC = ({ setOpenCreateModal }) => {
                     </div>
                   </div>
 
-                  <div className="text-center">
-                    <ul
-                      className="flex flex-wrap items-center justify-center
+                  <div>
+                    <div className="text-center">
+                      <ul
+                        className="flex flex-wrap items-center justify-center
                     gap-2"
-                    >
-                      <li>
-                        <a
-                          onClick={() => setOpenCreateModal(false)}
-                          className="group inline-flex h-10 w-10 items-center
+                      >
+                        <li>
+                          <a
+                            onClick={() => setOpenCreateModal(false)}
+                            className="group inline-flex h-10 w-10 items-center
                           justify-center rounded-lg bg-white/20 backdrop-blur-2xl
                           transition-all duration-500 hover:bg-blue-600/60"
-                        >
-                          <i className="text-2xl text-white group-hover:text-white">
-                            <AiOutlineClose />
-                          </i>
-                        </a>
-                      </li>
-                    </ul>
+                          >
+                            <i className="text-2xl text-white group-hover:text-white">
+                              <AiOutlineClose />
+                            </i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -421,6 +423,26 @@ export const CreateView: FC = ({ setOpenCreateModal }) => {
                         >
                           <span className="fw-bold">View on Solana</span>
                         </a>
+                      </div>
+
+                      <div className="text-center">
+                        <ul
+                          className="flex flex-wrap items-center justify-center
+                    gap-2"
+                        >
+                          <li>
+                            <a
+                              onClick={() => setOpenCreateModal(false)}
+                              className="group inline-flex h-10 w-10 items-center
+                          justify-center rounded-lg bg-white/20 backdrop-blur-2xl
+                          transition-all duration-500 hover:bg-blue-600/60"
+                            >
+                              <i className="text-2xl text-white group-hover:text-white">
+                                <AiOutlineClose />
+                              </i>
+                            </a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>

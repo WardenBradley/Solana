@@ -7,6 +7,7 @@ export { OfferView } from "./offer";
 export { FaqView } from "./faq";
 //@ts-ignore
 export { AirdropView } from "./airdrop";
+export { ContactView } from "./conatct";
 //@ts-ignore
 export { DonateView } from "./donate";
 //@ts-ignore
