@@ -106,21 +106,21 @@ export const ContactView: FC = ({ setOpenContact }) => {
                         field="message"
                         errors={state.errors}
                       />
-                    </form>
 
-                    <div className="mb-6 text-center">
-                      <button
-                        type="submit"
-                        disabled={state.submitting}
-                        className="bg-primary-600/90 hover:bg-primary-600 group mt-5
+                      <div className="mb-6 text-center">
+                        <button
+                          type="submit"
+                          disabled={state.submitting}
+                          className="bg-primary-600/90 hover:bg-primary-600 group mt-5
                       inline-flex w-full items-center justify-center rounded-lg
                       px-6 py-2 text-white backdrop-blur-2xl transition-all
                       duration-500"
-                      >
-                        <span className="fw-bold">Manda un Mensaje</span>
-                      </button>
-                      <CloseModal />
-                    </div>
+                        >
+                          <span className="fw-bold">Manda un Mensaje</span>
+                        </button>
+                        <CloseModal />
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
